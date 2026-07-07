@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bt_addcart">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:id="@+id/img"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:layout_gravity="center"
+                        android:padding="10dp"
+                        android:src="@drawable/service" />
+
+                    <TextView
+                        android:id="@+id/catname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/custom_font"
+                        android:gravity="start"
+                        android:text="Air Conditioner / Cassette AC"
+                        android:textAllCaps="false"
+                        android:textColor="@color/grey"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/custom_font"
+                        android:gravity="start"
+                        android:text="AC Service Deep Clean"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/mrp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/custom_font"
+                        android:gravity="start"
+                        android:text="₹ 499.00"
+                        android:textAllCaps="false"
+                        android:textColor="@color/red"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:isIndicator="true"
+                        android:numStars="5"
+                        android:stepSize="1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/editbox"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:id="@+id/minus"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/baseline_remove_24" />
+
+                            <LinearLayout
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/grey" />
+
+                            <TextView
+                                android:id="@+id/cartqty"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_margin="5dp"
+                                android:fontFamily="@font/custom_font"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="16dp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@color/grey" />
+
+                            <ImageView
+                                android:id="@+id/add"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_margin="5dp"
+                                android:src="@drawable/baseline_add_24" />
+
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnbook"
+                            android:layout_width="150dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@drawable/btnyellow"
+                            android:fontFamily="@font/custom_font"
+                            android:gravity="center"
+                            android:text="Book Now"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:fontFamily="@font/custom_font"
+                            android:gravity="center"
+                            android:text="Share On : "
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="@color/black"
+                            android:textSize="14dp" />
+
+                        <ImageView
+                            android:id="@+id/fb"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="0dp"
+                            android:padding="5dp"
+                            android:src="@drawable/facebook" />
+
+                        <ImageView
+                            android:id="@+id/wtsapp"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="0dp"
+                            android:padding="5dp"
+                            android:src="@drawable/whatsapp" />
+
+                        <ImageView
+                            android:id="@+id/twtr"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="0dp"
+                            android:padding="5dp"
+                            android:src="@drawable/twitter" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/descp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/custom_font"
+                        android:gravity="start"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+<!--                    <TextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginLeft="10dp"-->
+<!--                        android:layout_marginRight="10dp"-->
+<!--                        android:layout_marginBottom="5dp"-->
+<!--                        android:fontFamily="@font/custom_font"-->
+<!--                        android:gravity="start"-->
+<!--                        android:text="Related Products"-->
+<!--                        android:textAllCaps="false"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:textSize="16dp" />-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <include layout="@layout/row_services" />-->
+
+<!--                        <include layout="@layout/row_services" />-->
+
+<!--                    </LinearLayout>-->
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
